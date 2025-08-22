@@ -1,0 +1,516 @@
+.enter_hero {
+  position: relative;
+  background: url(../images/enter/hero_pic.jpg) no-repeat center bottom;
+  min-height: 657px;
+  @media screen and (max-width: 768px) {
+    background: url(../images/enter/hero_pic.jpg) no-repeat -350px bottom;
+    min-height: 750px;
+  }
+  @media screen and (max-width: 700px) {
+    background: url(../images/enter/hero_pic.jpg) no-repeat -400px bottom;
+  }
+  @media screen and (max-width: 600px) {
+    background: url(../images/enter/hero_pic.jpg) no-repeat -440px bottom;
+  }
+  @media screen and (max-width: 550px) {
+    background: url(../images/enter/hero_pic.jpg) no-repeat -480px bottom;
+  }
+  @media screen and (max-width: 480px) {
+    background: none;
+    min-height: auto;
+    padding-bottom: 2rem;
+  }
+  h1 {
+    margin: 0;
+    left: 6%;
+    top: 42px;
+    position: absolute;
+    z-index: 99;
+    @media screen and (max-width: 480px) {
+      position: relative;
+      top: auto;
+      margin-top: 1rem;
+    }
+  }
+  .hero_title1 {
+    position: absolute;
+    left: 5%;
+    top: 170px;
+    width: 463px;
+    height: 132px;
+    display: block;
+    background: url(../images/enter/hero_title1.png) no-repeat 0 0;
+    background-size: 100%;
+    font-size: 0;
+    z-index: 12;
+    @media screen and (max-width: 768px) {
+      width: 50%;
+      top: 140px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 90%;
+      position: relative;
+      top: auto;
+      margin-top: 2rem;
+      position: relative;
+    }
+  }
+  .hero_title2 {
+    position: absolute;
+    left: 5%;
+    bottom: -2px;
+    width: 666px;
+    height: 100px;
+    background: url(../images/enter/hero_title2.png) no-repeat 0 bottom;
+    background-size: contain;
+    z-index: 11;
+    font-size: 0;
+    @media screen and (max-width: 768px) {
+      left: 0;
+    }
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 480px) {
+      display: none;
+    }
+  }
+  .hero_search {
+    position: absolute;
+    left: 5%;
+    top: 358px;
+    z-index: 13;
+    @media screen and (max-width: 768px) {
+      width: 52%;
+      top: 280px;
+    }
+    @media screen and (max-width: 480px) {
+      width: 90%;
+      top: auto;
+      margin-top: 2rem;
+      position: relative;
+    }
+    .title {
+      font-size: 1.375rem;
+      color: $linkColor;
+      font-weight: bold;
+      margin-bottom: 0.875rem;
+      margin-left: 8px;
+    }
+    .search_block {
+      width: 776px;
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-end;
+      background: #fff;
+      padding: 0.625rem 1rem 0.375rem 1.5rem;
+      border-radius: 50px;
+      box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.3);
+      @media screen and (max-width: 840px) {
+        width: 96%;
+      }
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        align-items: stretch;
+        border-radius: 12px;
+        padding: 1rem;
+      }
+      label {
+        color: $primaryColor;
+        margin-bottom: 0;
+        margin-left: 0.3rem;
+        @media screen and (max-width: 768px) {
+          margin-left: 0rem;
+        }
+      }
+      select {
+        border: 1px solid #fff;
+        padding: 0.3rem 1.5rem 0.3rem 0.3rem;
+        color: #575757;
+        @media screen and (max-width: 768px) {
+          border: 1px solid #ccc;
+          margin: 0.3rem 0;
+        }
+      }
+      .search_type {
+        flex: 1 1 18%;
+      }
+      .search_purpose {
+        flex: 1 1 20%;
+      }
+      .search_item {
+        flex: 1 1 55%;
+      }
+      .search_input {
+        flex: 1 1 7%;
+        input {
+          background: $secondaryColor;
+          color: #fff;
+          border: 0;
+          height: 58px;
+          border-radius: 50px;
+          margin-top: 0;
+          width: 100%;
+          @media screen and (max-width: 768px) {
+            border-radius: 7px;
+            height: 40px;
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+  }
+  // &:before {
+  //   content: "";
+  //   width: 909px;
+  //   height: 657px;
+  //   display: block;
+  //   background: url(../images/enter/hero_tri1.png) no-repeat 0 0;
+  //   left: 0;
+  //   bottom: 0;
+  //   position: absolute;
+  //   z-index: 9;
+  // }
+  // &:after {
+  //   content: "";
+  //   width: 877px;
+  //   height: 385px;
+  //   display: block;
+  //   background: url(../images/enter/hero_tri2.png) no-repeat 0 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   position: absolute;
+  //   z-index: 10;
+  // }
+}
+
+.enter_countdown {
+  position: relative;
+  min-height: 623px;
+  background: #ede7e9 url(../images/enter/countdown_bg.jpg) no-repeat 0 bottom;
+  background-size: contain;
+  @media screen and (max-width: 710px) {
+    padding: 3rem 0;
+  }
+  .countdown_title {
+    position: absolute;
+    left: 20%;
+    top: 80px;
+    text-align: center;
+    @media screen and (max-width: 1000px) {
+      left: 10%;
+    }
+    @media screen and (max-width: 800px) {
+      left: 5%;
+    }
+    @media screen and (max-width: 710px) {
+      position: relative;
+      top: auto;
+      margin: 0 auto;
+      left: auto;
+    }
+    span {
+      display: block;
+      color: $secondaryColor;
+      font-size: 2.25rem;
+      font-weight: bold;
+      line-height: 160%;
+    }
+    .tax_date {
+    }
+    .tax_name {
+    }
+  }
+  .countdown_time {
+    position: absolute;
+    right: 9%;
+    top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 800px) {
+      right: 5%;
+    }
+    @media screen and (max-width: 710px) {
+      position: relative;
+      top: auto;
+      margin: 2rem auto;
+      right: auto;
+      text-align: center;
+    }
+    > div {
+      font-size: 1.3rem;
+      color: #333;
+      margin-bottom: 18px;
+      flex-basis: 100%;
+    }
+    span {
+      position: relative;
+      font-size: 4.25rem;
+      color: #333;
+      background: url(../images/enter/time.png) no-repeat 0 0;
+      background-size: contain;
+      width: 102px;
+      height: 105px;
+      margin-right: 2rem;
+      display: inline-block;
+      line-height: 105px;
+      font-family: "Century Gothic", monospace;
+      text-align: center;
+      letter-spacing: 8px;
+      padding-left: 6px;
+      @media screen and (max-width: 414px) {
+        width: 90px;
+        height: 91px;
+        line-height: 91px;
+        letter-spacing: 5px;
+        padding-left: 4px;
+        display: flex;
+      }
+      &::before {
+        font-size: 1.375rem;
+        display: block;
+        font-weight: bold;
+        position: absolute;
+        top: 114px;
+        line-height: 100%;
+        left: 41px;
+        @media screen and (max-width: 414px) {
+          top: 100px;
+          left: 34px;
+        }
+      }
+      &:after {
+        content: "：";
+        position: absolute;
+        left: 86px;
+        @media screen and (max-width: 414px) {
+          left: 75px;
+        }
+      }
+      &.day {
+        &:before {
+          content: "天";
+        }
+      }
+      &.hour {
+        &:before {
+          content: "時";
+        }
+      }
+      &.min {
+        margin-right: 0;
+        &:before {
+          content: "分";
+        }
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  .countdown_slogan {
+    position: absolute;
+    right: 9%;
+    top: 292px;
+    width: 368px;
+    height: 40px;
+    background: url(../images/enter/countdown_slogan.png) no-repeat 0 0;
+    background-size: 100%;
+    font-size: 0;
+    @media screen and (max-width: 800px) {
+      right: 5%;
+    }
+    @media screen and (max-width: 710px) {
+      position: relative;
+      top: auto;
+      margin: 3rem auto 2rem;
+      right: auto;
+      text-align: center;
+    }
+    @media screen and (max-width: 414px) {
+      width: 94%;
+    }
+  }
+  a {
+    position: absolute;
+    right: 7.9%;
+    display: block;
+    width: 34%;
+    line-height: 54px;
+    height: 54px;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.3);
+    padding-left: 2.25rem;
+    transition: all 0.5s;
+    @media screen and (max-width: 710px) {
+      position: relative;
+      right: auto;
+      margin: 1.5rem auto;
+      width: 260px;
+    }
+    @media screen and (max-width: 414px) {
+      width: 80%;
+    }
+    &:after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      transform: rotate(0);
+      background: url(../images/mp/icon_arrow.png) no-repeat center center;
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      transition: 0.3s ease-out;
+    }
+    &.link1 {
+      background: $secondaryColor;
+      top: 368px;
+      @media screen and (max-width: 710px) {
+        top: auto;
+      }
+    }
+    &.link2 {
+      background: $primaryColor;
+      top: 436px;
+      @media screen and (max-width: 710px) {
+        top: auto;
+      }
+    }
+    &:hover,
+    &:focus,
+    &.active {
+      background: #333;
+      color: #fff;
+    }
+  }
+}
+
+.enter_video {
+  padding: 50px 55px;
+  background: url(../images/enter/block2_bg.gif) repeat 0 0;
+  display: flex;
+  align-items: stretch;
+  @media screen and (max-width: 1000px) {
+    padding: 0;
+    background: none;
+  }
+  @media screen and (max-width: 809px) {
+    flex-direction: column;
+  }
+  .video_pic {
+    flex: 0 0 67%;
+    max-height: 454px;
+    @include aspect-ratio(809, 454);
+    position: relative;
+    a {
+      display: block;
+      &:before {
+        content: "";
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -40px;
+        margin-top: -40px;
+        background: #333;
+        z-index: 10;
+        transition: all 0.5s;
+      }
+      &:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 24px 0 24px 36px;
+        border-color: transparent transparent transparent #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -12px;
+        margin-top: -24px;
+        z-index: 11;
+      }
+      img {
+        object-fit: cover;
+      }
+      &:hover,
+      &:focus {
+        &:before {
+          content: "";
+          background: $secondaryColor;
+        }
+      }
+    }
+  }
+  .video_txt {
+    flex: 0 0 33%;
+    background: #fff;
+    padding: 2rem;
+    overflow: hidden;
+    max-height: 416px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width: 809px) {
+      max-height: none;
+    }
+    .video_tag {
+      padding: 0.5rem 1rem;
+      background: $secondaryColor;
+      color: #fff;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+    .video_title {
+      color: $primaryColor;
+      font-size: 1.75rem;
+      line-height: 130%;
+      margin-bottom: 1rem;
+      a {
+        color: $primaryColor;
+      }
+    }
+    .video_text {
+      color: #333;
+      line-height: 160%;
+      overflow: hidden;
+      a {
+        color: #333;
+      }
+      p {
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+}
+
+.enter_invoice {
+  img {
+    width: 100%;
+    height: auto;
+    line-height: 0;
+    display: block;
+  }
+}
+
+.enter_tax {
+  background: #faf6f1;
+  img {
+    width: 100%;
+    height: auto;
+    line-height: 0;
+    display: block;
+  }
+  > div:nth-child(n + 2) {
+    padding: 0 35px 15px 35px;
+    @media screen and (max-width: 1200px) {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,152 @@
+.fatfooter {
+  @extend %clearfix;
+  overflow: hidden;
+  padding-bottom: 1em;
+  margin: 0 auto;
+  background: $fatfooterBgColor;
+  .container {
+    overflow: hidden;
+    box-sizing: border-box;
+    @include gutter;
+  }
+  // 按鈕
+  .btn-fatfooter {
+    display: block;
+    width: 80px;
+    height: 40px;
+    border: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin: 0 0 0 -40px;
+    z-index: 90;
+    font-size: 0;
+    background: $primaryColor;
+    border-radius: 5px;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 80px;
+      height: 40px;
+      background: url(../images/mp/arrow.png) no-repeat center center;
+      display: block;
+      transform: rotate(0deg);
+      // left: 50%;
+      // top: 12px;
+      // margin-left: -6px;
+    }
+    &:hover,
+    &:focus {
+      background: #1f6c60;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      box-shadow: none !important;
+      outline: none;
+    }
+    &.close {
+      &:before {
+        transform: rotate(180deg) !important;
+      }
+    }
+  }
+  nav {
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding: 3em 0 0 2em;
+    box-sizing: border-box;
+    @include screen('mobile') {
+      padding: 3em 0.5em 0;
+    }
+    >ul {
+      display: flex;
+      @include li-reset;
+      @include screen('mobile') {
+        flex-flow: wrap row;
+      }
+      >li {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 16%;
+        box-sizing: border-box;
+        @include screen('mobile') {
+          flex: 1 1 90%;
+          margin-bottom: .5rem;
+          padding-bottom: .5rem;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        &:last-child {
+          @include screen('mobile') {
+            border-bottom: 0;
+          }
+        }
+        >a {
+          line-height: 1.5;
+          display: inline-block;
+          font-weight: bold;
+          padding: 0.5rem .25rem;
+          box-sizing: border-box;
+          color: #fff;
+          &:hover,
+          &:focus {
+            background: #005145;
+            border-radius: 3px;
+          }
+          &:focus {
+            box-shadow: none;
+          }
+        }
+        ul {
+          display: block;
+          margin: 0;
+          padding: 0 1em 0 0;
+          @include screen('mobile') {
+            width: auto;
+          }
+          li {
+            // flex: 0 0 100%;
+            width: auto;
+            margin-right: 0.5em;
+            display: block;
+            @include screen('mobile') {
+              display: inline-block;
+            }
+            a {
+              display: block;
+              @include aSetting_nocolor;
+              font-weight: normal;
+              text-align: left;
+              font-size: 0.938em;
+              line-height: 1.5em;
+              padding: 0.5rem .25rem;
+              background: none;
+              color: #fff;
+              @include screen('mobile') {
+                line-height: 1.2em;
+              }
+              @include screen('xs_mobile') {
+                font-size: 0.813rem;
+                padding: 0.25em 0;
+              }
+              &:hover,
+              &:focus {
+                text-decoration: underline;
+                color: $lightColor;
+              }
+              &:focus {
+                box-shadow: none;
+              }
+            }
+          }
+          //第三層關閉
+          ul {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

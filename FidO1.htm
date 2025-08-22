@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HyUI kit</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+  <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/slick/slick-theme.css"
+    />
+    <!-- 燈箱fancybox -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/fancybox/jquery.fancybox.min.css"
+    />
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/keelung_tax.css" />
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body>
+    <!-- Overlay + Popup -->
+    <div class="overlay">
+      <div class="popup">
+        <div class="popupTitle">告知事項</div>
+        <div class="contentText">
+          <p class="indent">
+            雲端發票專區為基隆市稅務局（以下簡稱本局）提供之電子發票查詢、對獎等電子發票相關服務。本局在提供服務過程中會蒐集、處理或利用您的個人資料，為確保您的權益並讓您瞭解個資情況，謹依法告知，當您登入時，即表示您已閱讀、瞭解並同意接受本服務條款之所有內容。如果您不同意本服務條款的內容，或者您所屬的國家或地域排除本服務條款內容之全部或部分時，您應立即停止使用本服務。
+          </p>
+          <p class="indent">
+            此外，當您使用本服務之特定功能時，可能會依據該特定功能之性質，而須遵守本服務所另行公告之服務條款或相關規定。此另行公告之服務條款或相關規定亦均併入屬於本服務條款之一部分。本局有權於任何時間修改或變更本服務條款之內容，並於本局網站公告，請您隨時注意該等修改或變更。若您於任何修改或變更後繼續使用本服務，則視為您已閱讀、瞭解並同意接受該等修改或變更。
+          </p>
+          <p class="indent">
+            若您為未滿 18
+            歲之未成年人，應請您的父母或監護人閱讀、瞭解並同意本服務條款之所有內容及其後之修改變更，方得使用本服務。當您使用本服務時，即推定您的父母或監護人已閱讀、瞭解並同意接受本服務條款之所有內容及其後之修改變更。
+          </p>
+          <p>
+            一、本局係依財政部電子發票應用程式介面使用規範（以下簡稱API
+            使用規範）取得授權，並依 API
+            使用規範規定之授權範圍提供查詢電子發票資料、中獎發票、雲端發票捐贈及載具歸戶等特定目的服務。
+          </p>
+          <p>
+            二、本服務需要您提供個人資料，為遵守個人資料保護法規定，在您提供個人資料前，依法告知下列事項：
+          </p>
+          <p>
+            (一) 本局獲取您的個人資料種類如下：<br />姓名、身分證字號、護照號碼、電話、通訊地址、連絡方式、網路平臺申請之帳號(手機條碼及驗證碼)及電子郵遞地址等資訊。
+          </p>
+          <p>
+            (二) 本局將依個人資料保護法及 API
+            使用規範等相關法令規定，於提供特定目的服務時，未經您的同意下，不會在中華民國境內於您使用本服務之期間，蒐集、儲存您的手機號碼、手機條碼、驗證碼、電子發票資料、使用紀錄及其他個人資訊。
+          </p>
+          <p>
+            (三) 您可依個人資料保護法第 3
+            條規定，就您的個人資料向本局行使下列權利：
+            <br />查詢或請求閱覽。<br />
+            請求製給複製本。<br />
+            請求補充或更正。<br />
+            請求停止蒐集、處理及利用。<br />
+            請求刪除。
+          </p>
+          <p>
+            (四)
+            若您未提供正確之個人資料，本局將無法為您提供特定目的之相關服務。
+          </p>
+          <p>
+            若您不同意上述聲明內容，請勿於本局網站內提供您的個人資料，另本局網站多數服務無須提供您的資料也可進行使用，並不影響您資訊留存的權益，如需服務請洽本服務管理單位人員。
+          </p>
+        </div>
+        <div class="btn_grp popupFoot">
+          <button class="btn btn-reset">不同意，回首頁</button>
+          <button class="btn btn-submit">我已詳細閱讀並同意</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+      <!-- header Start -->
+      <header class="header innerheader">
+        <div class="container">
+          <a
+            class="accesskey"
+            href="#aU"
+            id="aU"
+            accesskey="U"
+            title="網站標題"
+            tabindex="2"
+            >:::</a
+          >
+          <!-- navigation End -->
+          <h1>
+            <a href="index.htm"
+              ><img src="images/enter/logo.png" alt="基隆市稅務局"
+            /></a>
+          </h1>
+          <!-- navigation Start -->
+          <nav class="navigation" role="navigation" aria-label="Site">
+            <!-- 新增div navlist -->
+            <div class="navlist">
+              <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">宣導頁</a></li>
+                <li><a href="#">網站導覽</a></li>
+                <li><a href="#">雙語辭彙</a></li>
+                <li><a href="#">English</a></li>
+              </ul>
+            </div>
+            <!-- peoplerole -->
+            <div class="peoplerole">
+              <a href="#">分眾</a>
+              <ul>
+                <li><a href="#">繁體中文</a></li>
+                <li><a href="#">简体中文</a></li>
+                <li><a href="#">ENGLISH</a></li>
+              </ul>
+            </div>
+            <!-- font_size -->
+            <div class="font_size">
+              <span>字型大小</span>
+              <!-- 英文用<span>font-size：</span> -->
+              <ul>
+                <li><a href="#" class="small">小</a></li>
+                <li><a href="#" class="medium">中</a></li>
+                <li><a href="#" class="large">大</a></li>
+              </ul>
+            </div>
+          </nav>
+          <!-- noscript -->
+          <noscript>
+            您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+
+            (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的
+            Alt+左方向鍵(←)
+            快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+            <a href="#">網站導覽</a>
+          </noscript>
+          <!-- menu Start -->
+          <a class="menuSwitch" href="">選單</a>
+          <nav class="menu menu1">
+            <ul>
+              <li>
+                <a href="#">各稅資訊</a>
+                <ul>
+                  <li><a href="#">使用牌照稅</a></li>
+                  <li><a href="#">房屋稅</a></li>
+                  <li><a href="#">地價稅</a></li>
+                  <li><a href="#">土地增值稅</a></li>
+                  <li><a href="#">契稅</a></li>
+                  <li><a href="#">印花稅</a></li>
+                  <li><a href="#">娛樂稅</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="http://www.google.com">線上櫃臺</a>
+                <ul>
+                  <li>
+                    <a href="http://www.google.com">線上申辦及表單下載</a>
+                  </li>
+                  <li><a href="#">即時查詢</a></li>
+                  <li><a href="#">各類試算</a></li>
+                  <li><a href="#">線上查繳稅</a></li>
+                  <li><a href="#">網路繳稅</a></li>
+                  <li><a href="#">電子稅務入口網</a></li>
+                  <li><a href="#">不動產移轉網路申報</a></li>
+                  <li><a href="#">預約服務</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="http://www.google.com">為民服務</a>
+                <ul>
+                  <li>
+                    <a href="http://www.google.com"
+                      >全功能服務櫃臺作業項目及應備證件</a
+                    >
+                  </li>
+                  <li><a href="#">創新服務措施</a></li>
+                  <li><a href="#">便民服務措施</a></li>
+                  <li><a href="#">節稅健檢</a></li>
+                  <li><a href="#">多元繳稅說明專區</a></li>
+                  <li><a href="#">意見交流</a></li>
+                  <li><a href="#">問卷調查</a></li>
+                  <li><a href="#">稅款逾期加徵滯納金計算表</a></li>
+                  <li><a href="#">稅務行事曆</a></li>
+                  <li><a href="#">常見問答</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">專區服務</a>
+                <ul>
+                  <li><a href="#">新冠肺炎專區</a></li>
+                  <li><a href="#">多元繳稅說明專區</a></li>
+                  <li><a href="http://www.google.com">身心障礙服務專區</a></li>
+                  <li><a href="#">災害減免專區</a></li>
+                  <li><a href="#">銀髮族專區</a></li>
+                  <li><a href="#">財產過戶專區</a></li>
+                  <li><a href="#">節稅專區</a></li>
+                  <li><a href="#">新住民稅務專區</a></li>
+                  <li><a href="#">納稅者權利保護專區</a></li>
+                  <li><a href="#">修法專區</a></li>
+                  <li><a href="#">金融機構經收稅款專區</a></li>
+                  <li><a href="#">志工專區</a></li>
+                  <li><a href="#">政風園地</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">宣導園地</a>
+                <ul>
+                  <li><a href="#">活動訊息</a></li>
+                  <li><a href="#">有獎徵答活動</a></li>
+                  <li><a href="#">雲端發票e起來</a></li>
+                  <li><a href="#">統一發票開獎</a></li>
+                  <li><a href="#">電子書</a></li>
+                  <li><a href="#">宣導文宣</a></li>
+                  <li><a href="#">數位影音</a></li>
+                  <li><a href="#">節稅懶人包</a></li>
+                  <li><a href="#">教材下載</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">公布欄</a>
+                <ul>
+                  <li><a href="#">稅務新聞</a></li>
+                  <li><a href="#">活動訊息</a></li>
+                  <li><a href="#">稅務公告</a></li>
+                  <li><a href="#">徵才公告</a></li>
+                  <li><a href="#">招標公告</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">資訊公開</a>
+                <ul>
+                  <li><a href="#">法規命令</a></li>
+                  <li><a href="#">政府資料開放</a></li>
+                  <li><a href="#">施政計畫及研究報告</a></li>
+                  <li><a href="#">業務統計</a></li>
+                  <li><a href="#">預算及決算書</a></li>
+                  <li><a href="#">政策及業務宣導之預算執行情形表</a></li>
+                  <li><a href="#">稅式支出報告</a></li>
+                  <li><a href="#">請願之處理結果及訴願之決定</a></li>
+                  <li><a href="#">公共工程及採購契約</a></li>
+                  <li><a href="#">個人資料保護專區</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">機關簡介</a>
+                <ul>
+                  <li><a href="#">本局沿革</a></li>
+                  <li><a href="#">局長介紹</a></li>
+                  <li><a href="#">組織編制與職掌</a></li>
+                  <li><a href="#">榮譽榜</a></li>
+                  <li><a href="#">本局地圖</a></li>
+                  <li><a href="#">聯絡通訊</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a href="" class="close">關閉</a>
+          </nav>
+          <nav class="menu menu2" role="navigation" aria-label="About page">
+            <ul>
+              <li>
+                <a href="#">各稅資訊</a>
+                <ul>
+                  <li><a href="#">第二層選單</a></li>
+                  <li><a href="#">第二層選單</a></li>
+                  <li><a href="#">第二層選單</a></li>
+                  <li><a href="#">第二層選單</a></li>
+                </ul>
+              </li>
+              <li><a href="http://www.google.com">線上櫃臺</a></li>
+              <li><a href="http://www.google.com">為民服務</a></li>
+              <li><a href="#">專區服務</a></li>
+              <li><a href="#">會員登入</a></li>
+            </ul>
+          </nav>
+          <!-- Search Start -->
+          <a class="searchSwitch" href="">搜尋</a>
+          <div class="search" role="search">
+            <div class="form_grp">
+              <label for="mustSameAsId">搜尋</label>
+              <input
+                name="username"
+                id="mustSameAsId"
+                type="text"
+                placeholder="請輸入文字"
+                accesskey="S"
+                title="請輸入文字"
+                aria-label="搜尋網站內容"
+              />
+              <button type="button" class="btn btn-search">查詢</button>
+              <button type="button" class="btn">進階搜尋</button>
+            </div>
+            <div class="keywordHot">
+              熱門關鍵字：
+              <ul>
+                <li><a href="#">熱門熱門</a></li>
+                <li><a href="#">查詢</a></li>
+                <li><a href="#">字詞三</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Search End -->
+        </div>
+      </header>
+      <!-- header End -->
+      <div class="inner_img">
+        <img src="images/innerimg.jpeg" alt="" />
+      </div>
+      <!-- main Start -->
+      <div id="center" class="main innerpage">
+        <!-- 內頁新增一個classname-->
+        <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區"
+          >:::</a
+        >
+        <div class="container">
+          <!-- 主要內容區 -->
+          <div class="center_block">
+            <!-- breadcrumb路徑 -->
+            <div class="breadcrumb">
+              <ul>
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">雲端發票專區</a></li>
+                <li>會員登入</li>
+              </ul>
+            </div>
+            <h2 class="title">會員登入</h2>
+            <!-- SP Start -->
+            <section class="sp">
+              <div class="noticeTxt">
+                <h3>注意事項：</h3>
+                <ul>
+                  <li>提醒您，會員登入時，需先擁有1組手機條碼。</li>
+                  <li>
+                    若您尚未擁有手機條碼，請先<a href="">申請手機條碼</a>。
+                  </li>
+                  <li>
+                    擁有手機條碼但尚未註冊會員的民眾，首次請先以「一般登入」方式登入並註冊會員。
+                  </li>
+                </ul>
+              </div>
+              <div class="apply grid2">
+                <div class="apply_form">
+                  <p>
+                    註:<abbr class="necessary" title="“為必填欄位,不能為空白。“"
+                      >必填</abbr
+                    >欄位，不能為空白。
+                  </p>
+                  <form action="" class="flex-form form_grid">
+                    <h3>一般登入</h3>
+                    <div class="shadowOut">
+                      <div class="form_group">
+                        <!-- 手機號碼 -->
+                        <div class="form_grp">
+                          <label for="" class="form_title"
+                            ><abbr
+                              class="necessary"
+                              title="“為必填欄位,不能為空白。“"
+                              >必填</abbr
+                            >手機號碼</label
+                          >
+                          <div class="form_content">
+                            <input
+                              name=""
+                              id=""
+                              type="text"
+                              placeholder="請輸入手機號碼"
+                            />
+                            <div class="notice_error">
+                              格式錯誤，請重新輸入。
+                              <a href="javascript:;" class="close"
+                                ><img src="images/basic/icon_close.svg" alt=""
+                              /></a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 手機條碼驗證碼(密碼) -->
+                        <div class="form_grp">
+                          <label for="" class="form_title"
+                            ><abbr
+                              class="necessary"
+                              title="“為必填欄位,不能為空白。“"
+                              >必填</abbr
+                            >手機條碼驗證碼(密碼)</label
+                          >
+                          <div class="form_content">
+                            <div class="password-container">
+                              <input
+                                type="password"
+                                placeholder="123WXY890"
+                                class="password"
+                              />
+                              <i class="eyeclose"></i>
+                            </div>
+                            <p>
+                              <a href="">忘記驗證碼(密碼)</a>
+                            </p>
+                          </div>
+                        </div>
+                        <!-- 驗證碼 -->
+                        <div class="form_grp">
+                          <label class="form_title"
+                            ><abbr
+                              class="necessary"
+                              title="“為必填欄位,不能為空白。“"
+                              >必填</abbr
+                            >驗證碼</label
+                          >
+                          <div class="form_content">
+                            <img
+                              src="images/basic/captcha.gif"
+                              alt=""
+                              class="captcha"
+                            />
+                            <input
+                              type="text"
+                              id=""
+                              value=""
+                              placeholder="請輸入驗證碼"
+                            /><a href="" class="refresh">更換驗證碼</a
+                            ><a href="" class="play">語音播放</a>
+                            <div class="notice_info">
+                              如果無法使用語音，請下載<a href="">語音檔案</a>。
+                              <a href="javascript:;" class="close"
+                                ><img src="images/basic/icon_close.svg" alt=""
+                              /></a>
+                            </div>
+                            <div class="notice_error">
+                              您輸入的驗證碼錯誤
+                              <a href="javascript:;" class="close"
+                                ><img src="images/basic/icon_close.svg" alt=""
+                              /></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="btn_grp">
+                      <button class="btn btn-reset">清除</button>
+                      <button class="btn btn-submit">登入/註冊會員</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="naturalPerson">
+                  <div class="title">
+                    <span>老是忘記密碼？試試下面的登入方式吧！</span>
+                    行動自然人憑證(TW FidO)登入
+                  </div>
+                  <ul>
+                    <li>
+                      <em>限已註冊本局會員使用</em
+                      >，尚未註冊會員的民眾，首次請先以「一般登入」方式登入並註冊會員。<br />＊行動自然人憑證之身分證字號，需與會員身分證統一編號一致。
+                    </li>
+                    <li>
+                      使用「行動自然人憑證」登入前，請先依據「行動自然人憑證網站」說明，<em>完成註冊與綁定行動裝置作業</em>。<br />＊註冊前需備妥：(1)自然人憑證IC卡、(2)晶片讀卡機、(3)支援生物辨識（指紋或臉部辨識）的手機或平板。<br />
+                      <a
+                        href="https://fido.moi.gov.tw/pt/main/teaching"
+                        target="_blank"
+                        >如何註冊TW FidO?</a
+                      >
+                    </li>
+                    <li>完成上述2項作業，即可使用行動自然人憑證登入哦!</li>
+                  </ul>
+                  <div class="naturalPersonButton">
+                    <div class="btn_grp">
+                      <button class="btn btn-submit">
+                        使用行動自然人憑證登入
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- SP End -->
+          </div>
+        </div>
+      </div>
+      <!-- fatfooter Start -->
+      <section class="fatfooter">
+        <div class="container">
+          <button
+            type="button"
+            name="展開選單/OPEN"
+            aria-label="導覽選單展開/收合"
+            class="btn btn-fatfooter"
+          >
+            收合
+          </button>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">各稅資訊</a>
+                <ul>
+                  <li><a href="#">使用牌照稅</a></li>
+                  <li><a href="#">房屋稅</a></li>
+                  <li><a href="#">地價稅</a></li>
+                  <li><a href="#">土地增值稅</a></li>
+                  <li><a href="#">契稅</a></li>
+                  <li><a href="#">印花稅</a></li>
+                  <li><a href="#">娛樂稅</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="http://www.google.com">線上櫃臺</a>
+                <ul>
+                  <li>
+                    <a href="http://www.google.com">線上申辦及表單下載</a>
+                  </li>
+                  <li><a href="#">即時查詢</a></li>
+                  <li><a href="#">各類試算</a></li>
+                  <li><a href="#">線上查繳稅</a></li>
+                  <li><a href="#">網路繳稅</a></li>
+                  <li><a href="#">電子稅務入口網</a></li>
+                  <li><a href="#">不動產移轉網路申報</a></li>
+                  <li><a href="#">預約服務</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="http://www.google.com">為民服務</a>
+                <ul>
+                  <li>
+                    <a href="http://www.google.com"
+                      >全功能服務櫃臺作業項目及應備證件</a
+                    >
+                  </li>
+                  <li><a href="#">創新服務措施</a></li>
+                  <li><a href="#">便民服務措施</a></li>
+                  <li><a href="#">節稅健檢</a></li>
+                  <li><a href="#">多元繳稅說明專區</a></li>
+                  <li><a href="#">意見交流</a></li>
+                  <li><a href="#">問卷調查</a></li>
+                  <li><a href="#">稅款逾期加徵滯納金計算表</a></li>
+                  <li><a href="#">稅務行事曆</a></li>
+                  <li><a href="#">常見問答</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">專區服務</a>
+                <ul>
+                  <li><a href="#">新冠肺炎專區</a></li>
+                  <li><a href="#">多元繳稅說明專區</a></li>
+                  <li><a href="http://www.google.com">身心障礙服務專區</a></li>
+                  <li><a href="#">災害減免專區</a></li>
+                  <li><a href="#">銀髮族專區</a></li>
+                  <li><a href="#">財產過戶專區</a></li>
+                  <li><a href="#">節稅專區</a></li>
+                  <li><a href="#">新住民稅務專區</a></li>
+                  <li><a href="#">納稅者權利保護專區</a></li>
+                  <li><a href="#">修法專區</a></li>
+                  <li><a href="#">金融機構經收稅款專區</a></li>
+                  <li><a href="#">志工專區</a></li>
+                  <li><a href="#">政風園地</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">宣導園地</a>
+                <ul>
+                  <li><a href="#">活動訊息</a></li>
+                  <li><a href="#">有獎徵答活動</a></li>
+                  <li><a href="#">雲端發票e起來</a></li>
+                  <li><a href="#">統一發票開獎</a></li>
+                  <li><a href="#">電子書</a></li>
+                  <li><a href="#">宣導文宣</a></li>
+                  <li><a href="#">數位影音</a></li>
+                  <li><a href="#">節稅懶人包</a></li>
+                  <li><a href="#">教材下載</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">公布欄</a>
+                <ul>
+                  <li><a href="#">稅務新聞</a></li>
+                  <li><a href="#">活動訊息</a></li>
+                  <li><a href="#">稅務公告</a></li>
+                  <li><a href="#">徵才公告</a></li>
+                  <li><a href="#">招標公告</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">資訊公開</a>
+                <ul>
+                  <li><a href="#">法規命令</a></li>
+                  <li><a href="#">政府資料開放</a></li>
+                  <li><a href="#">施政計畫及研究報告</a></li>
+                  <li><a href="#">業務統計</a></li>
+                  <li><a href="#">預算及決算書</a></li>
+                  <li><a href="#">政策及業務宣導之預算執行情形表</a></li>
+                  <li><a href="#">稅式支出報告</a></li>
+                  <li><a href="#">請願之處理結果及訴願之決定</a></li>
+                  <li><a href="#">公共工程及採購契約</a></li>
+                  <li><a href="#">個人資料保護專區</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">機關簡介</a>
+                <ul>
+                  <li><a href="#">本局沿革</a></li>
+                  <li><a href="#">局長介紹</a></li>
+                  <li><a href="#">組織編制與職掌</a></li>
+                  <li><a href="#">榮譽榜</a></li>
+                  <li><a href="#">本局地圖</a></li>
+                  <li><a href="#">聯絡通訊</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- fatfooter End -->
+      <!-- footer Start-->
+      <footer>
+        <div class="container">
+          <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區"
+            >:::</a
+          >
+          <div class="footer_info">
+            <ul class="footer_link">
+              <li><a href="javascript:;">隱私權政策</a></li>
+              <li><a href="javascript:;">網站安全政策</a></li>
+              <li><a href="javascript:;">政府網站資料開放宣告</a></li>
+            </ul>
+            <p>
+              免付費電話：0800-306969 <br />本局電話：02-24331888
+              <br />地址：20402基隆市安樂路二段162號 <a href="">【地圖】</a
+              ><br />
+              服務時間：星期一至星期五8:00~12:00｜下午1:30~5:30
+              (總局服務中心中午不休息,下午延時服務至6:00)
+            </p>
+            <p class="Copyright">版權所有 ©Copyright 基隆市稅務局</p>
+            <span class="update">更新日期：<em>2018/01/01</em></span>
+            <span class="counter">總瀏覽人次：<em>46476653</em></span>
+          </div>
+          <div class="footer_icon">
+            <a target="_blank" href="javascript:;" title="另開視窗">
+              <img src="images/basic/egov.png" alt="" />
+            </a>
+            <a target="_blank" href="javascript:;" title="另開視窗">
+              <img src="images/basic/accessibility.jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </footer>
+      <!-- footer End -->
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script>
+    <!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script>
+    <!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script>
+    <!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script>
+    <!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script>
+    <!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script>
+    <!-- scrolltable -->
+    <!-- sticky-sidebar -->
+    <script src="vendor/sticky-sidebar/sticky-sidebar.js"></script>
+    <script src="vendor/sticky-sidebar/ResizeSensor.js"></script>
+    <!-- fancy -->
+    <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
+    <!-- hyUI -->
+    <script src="js/hyui.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+  </body>
+</html>

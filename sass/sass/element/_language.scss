@@ -1,0 +1,78 @@
+.peoplerole {
+  //   font-weight: bold;
+  //   font-size: 0.75em;
+  font-size: 0.875rem;
+  flex: 0 0 auto;
+  width: auto;
+  z-index: 9999;
+  position: relative;
+  margin-right: 0.5em;
+  >a {
+    display: block;
+    // background: #555;
+    box-sizing: border-box;
+    // color: #fff;
+    // padding: 0.2em 1em;
+    padding: 0 1.2rem 0 0.5em;
+    line-height: 2rem;
+    position: relative;
+    transition: 0.3s ease-out;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    color: #767676;
+    white-space: nowrap;
+    &:after {
+      content: '';
+      width: 5px;
+      height: 5px;
+      display: block;
+      position: absolute;
+      right: 0.5em;
+      top: .8em;
+      border: 1px solid #767676;
+      border-top: 0;
+      border-left: 0;
+      transform: rotate(45deg);
+    }
+    // &:before {
+    //   position: absolute;
+    //   width: 1px;
+    //   height: 1.6em;
+    //   right: 2em;
+    //   top: 0.4em;
+    //   content: '';
+    //   border-left: 1px solid #ddd;
+    // }
+    &:focus {
+      box-shadow: none;
+      //   background: #444;
+    }
+  }
+  ul {
+    background: #444;
+    padding: 1em 1.5em;
+    display: none;
+    position: absolute;
+    // width: 100%;
+    width: auto;
+    top: 100%;
+    @include li-reset;
+    li {
+      flex: 1;
+      box-sizing: border-box;
+      margin: 0;
+      a {
+        display: block;
+        color: #fff;
+        padding: 0.5em;
+        transition: 0.3s ease-out;
+        white-space: nowrap;
+        &:hover,
+        &:focus {
+          background: RGBA(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+}

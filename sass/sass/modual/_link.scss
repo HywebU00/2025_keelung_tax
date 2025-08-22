@@ -1,0 +1,91 @@
+// 自動產生編號：https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters
+// 選項次層
+.sub_menu,
+.np {
+  ul,
+  ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  li {
+    flex: 1 1 49%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    flex-grow: 0;
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+    @include screen('mobile') {
+      flex: 1 1 100%;
+    }
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      background: $primaryColor;
+      opacity: .3;
+      transition: all .5s;
+    }
+    &:before {
+      width: 0;
+      height: 0;
+      right: -50px;
+      bottom: -80px;
+    }
+    &:after {
+      width: 0;
+      height: 0;
+      right: 120px;
+      top: -10px;
+    }
+    a {
+      padding: 1em;
+      display: block;
+      vertical-align: top;
+      position: relative;
+      height: 100%;
+      box-sizing: border-box;
+      @include aSetting_nocolor;
+      // @include text-overflow;
+      .num {
+        position: absolute;
+        width: 1em;
+        top: 1em;
+        left: 0.5em;
+        text-align: right;
+        &:after {
+          content: '.';
+        }
+      }
+    }
+    &:hover,
+    &:focus {
+      border: 1px solid $aHover;
+      &:before {
+        width: 150px;
+        height: 150px;
+        right: -50px;
+        bottom: -80px;
+      }
+      &:after {
+        width: 40px;
+        height: 40px;
+        right: 120px;
+        top: -10px;
+      }
+      a {
+        color: $aHover;
+      }
+    }
+  }
+}

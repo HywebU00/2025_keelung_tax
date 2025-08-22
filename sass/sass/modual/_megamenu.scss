@@ -1,0 +1,166 @@
+//submenu animation
+@keyframes showMenu {
+    0% {
+        left: 20px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+// pc版 megamenu
+.megamenu {
+    box-sizing: border-box;
+    position: relative;
+    z-index: 9;
+    clear: both;
+    @include screen('mobile') {
+        display: none;
+    }
+    // when scroll navBar add sticky classname
+    &.sticky {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        & > ul {
+            width: 100%;
+            max-width: $container-max;
+            margin: 0 auto;
+            ul {
+                max-width: $container-max;
+                margin: 0 auto;
+            }
+        }
+    }
+    // 預設選單 ul
+    > ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        // 第一層選單樣式
+        > li {
+            flex: 0 1 calc(100% / 6);
+            > a {
+                display: block;
+                padding: 0 1em;
+                min-height: 2.5em;
+                font-weight: bold;
+                line-height: 2.5em;
+                color: $color-word;
+            }
+            &.hasChild {
+                > a {
+                    &:after {
+                        content: '';
+                        width: 4px;
+                        height: 4px;
+                        display: inline-block;
+                        margin-left: 0.5em;
+                        vertical-align: middle;
+                        border: 2px solid lighten($color-word, 40);
+                        transform: rotate(135deg);
+                        border-bottom: none;
+                        border-left: none;
+                        margin-bottom: 0.2em;
+                    }
+                }
+            }
+            &:hover {
+                > a {
+                    color: $aHover;
+                    &:after {
+                        border: 2px solid $aHover;
+                        border-bottom: none;
+                        border-left: none;
+                    }
+                }
+            }
+        }
+    }
+    ul {
+        li {
+            a {
+                display: block;
+                outline: none;
+                text-decoration: none;
+            }
+            // 第二層選單樣式
+            ul {
+                // display: none;
+                display: flex;
+                overflow: visible;
+                width: 100%;
+                padding: 1em;
+                margin: 0;
+                z-index: 999999;
+                position: absolute;
+                top: auto;
+                left: 0;
+                right: 0;
+                list-style: none;
+                text-align: left;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                background-color: #f1f1f1;
+                li {
+                    flex: none;
+                    flex-basis: 23%;
+                    margin: 0 1%;
+                    padding: 0;
+                    a {
+                        padding: 0.3em 1.2em;
+                        color: $color-word;
+                        font-weight: bold;
+                        box-sizing: border-box;
+                        font-size: 0.875rem;
+                        &:hover,
+                        &:focus {
+                            color: $aHover;
+                        }
+                    }
+                    // 第三層選單樣式
+                    ul {
+                        margin: 0 0 1em;
+                        padding: 0 0 0 1em !important;
+                        @include screen('mobile') {
+                            margin: 0 !important;
+                            padding: 0 !important;
+                        }
+                        li {
+                            margin: 0;
+                            padding: 0;
+                            ul {
+                                margin: 0;
+                                padding: 0 0 0 1em !important;
+                            }
+                        }
+                    }
+                }
+                li.hasChild {
+                    > ul {
+                        position: relative;
+                        z-index: 999;
+                        top: 0;
+                        left: 0;
+                        animation: none;
+                        display: block;
+                        li {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+                ul {
+                    top: 0;
+                    left: 100%;
+                    animation: none;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

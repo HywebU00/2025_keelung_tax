@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HyUI kit</title>
+  <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
+  <!-- slick css-->
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+  <!-- 燈箱fancybox -->
+  <link rel="stylesheet" type="text/css" href="vendor/fancybox/jquery.fancybox.min.css" />
+  <!-- hyUI css -->
+  <link rel="stylesheet" href="css/keelung_tax.css" />
+  <!-- favicon -->
+  <link href="images/favicon.png" rel="icon" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- 直接跳主內容區 -->
+  <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+  <!-- wrapper Start -->
+  <div class="wrapper">
+    <!-- header Start -->
+    <header class="header innerheader">
+      <div class="container">
+        <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+        <!-- navigation End -->
+        <h1>
+          <a href="index.htm"><img src="images/enter/logo.png" alt="基隆市稅務局" /></a>
+        </h1>
+        <!-- navigation Start -->
+        <nav class="navigation" role="navigation" aria-label="Site">
+          <!-- 新增div navlist -->
+          <div class="navlist">
+            <ul>
+              <li><a href="#">首頁</a></li>
+              <li><a href="#">宣導頁</a></li>
+              <li><a href="#">網站導覽</a></li>
+              <li><a href="#">雙語辭彙</a></li>
+              <li><a href="#">English</a></li>
+            </ul>
+          </div>
+          <!-- peoplerole -->
+          <div class="peoplerole">
+            <a href="#">分眾</a>
+            <ul>
+              <li><a href="#">繁體中文</a></li>
+              <li><a href="#">简体中文</a></li>
+              <li><a href="#">ENGLISH</a></li>
+            </ul>
+          </div>
+          <!-- font_size -->
+          <div class="font_size">
+            <span>字型大小</span>
+            <!-- 英文用<span>font-size：</span> -->
+            <ul>
+              <li><a href="#" class="small">小</a></li>
+              <li><a href="#" class="medium">中</a></li>
+              <li><a href="#" class="large">大</a></li>
+            </ul>
+          </div>
+        </nav>
+        <!-- noscript -->
+        <noscript>
+          您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+
+          (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的
+          Alt+左方向鍵(←)
+          快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結
+          <a href="#">網站導覽</a>
+        </noscript>
+        <!-- menu Start -->
+        <a class="menuSwitch" href="">選單</a>
+        <nav class="menu menu1">
+          <ul>
+            <li>
+              <a href="#">各稅資訊</a>
+              <ul>
+                <li><a href="#">使用牌照稅</a></li>
+                <li><a href="#">房屋稅</a></li>
+                <li><a href="#">地價稅</a></li>
+                <li><a href="#">土地增值稅</a></li>
+                <li><a href="#">契稅</a></li>
+                <li><a href="#">印花稅</a></li>
+                <li><a href="#">娛樂稅</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="http://www.google.com">線上櫃臺</a>
+              <ul>
+                <li>
+                  <a href="http://www.google.com">線上申辦及表單下載</a>
+                </li>
+                <li><a href="#">即時查詢</a></li>
+                <li><a href="#">各類試算</a></li>
+                <li><a href="#">線上查繳稅</a></li>
+                <li><a href="#">網路繳稅</a></li>
+                <li><a href="#">電子稅務入口網</a></li>
+                <li><a href="#">不動產移轉網路申報</a></li>
+                <li><a href="#">預約服務</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="http://www.google.com">為民服務</a>
+              <ul>
+                <li>
+                  <a href="http://www.google.com">全功能服務櫃臺作業項目及應備證件</a>
+                </li>
+                <li><a href="#">創新服務措施</a></li>
+                <li><a href="#">便民服務措施</a></li>
+                <li><a href="#">節稅健檢</a></li>
+                <li><a href="#">多元繳稅說明專區</a></li>
+                <li><a href="#">意見交流</a></li>
+                <li><a href="#">問卷調查</a></li>
+                <li><a href="#">稅款逾期加徵滯納金計算表</a></li>
+                <li><a href="#">稅務行事曆</a></li>
+                <li><a href="#">常見問答</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">專區服務</a>
+              <ul>
+                <li><a href="#">新冠肺炎專區</a></li>
+                <li><a href="#">多元繳稅說明專區</a></li>
+                <li><a href="http://www.google.com">身心障礙服務專區</a></li>
+                <li><a href="#">災害減免專區</a></li>
+                <li><a href="#">銀髮族專區</a></li>
+                <li><a href="#">財產過戶專區</a></li>
+                <li><a href="#">節稅專區</a></li>
+                <li><a href="#">新住民稅務專區</a></li>
+                <li><a href="#">納稅者權利保護專區</a></li>
+                <li><a href="#">修法專區</a></li>
+                <li><a href="#">金融機構經收稅款專區</a></li>
+                <li><a href="#">志工專區</a></li>
+                <li><a href="#">政風園地</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">宣導園地</a>
+              <ul>
+                <li><a href="#">活動訊息</a></li>
+                <li><a href="#">有獎徵答活動</a></li>
+                <li><a href="#">雲端發票e起來</a></li>
+                <li><a href="#">統一發票開獎</a></li>
+                <li><a href="#">電子書</a></li>
+                <li><a href="#">宣導文宣</a></li>
+                <li><a href="#">數位影音</a></li>
+                <li><a href="#">節稅懶人包</a></li>
+                <li><a href="#">教材下載</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">公布欄</a>
+              <ul>
+                <li><a href="#">稅務新聞</a></li>
+                <li><a href="#">活動訊息</a></li>
+                <li><a href="#">稅務公告</a></li>
+                <li><a href="#">徵才公告</a></li>
+                <li><a href="#">招標公告</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">資訊公開</a>
+              <ul>
+                <li><a href="#">法規命令</a></li>
+                <li><a href="#">政府資料開放</a></li>
+                <li><a href="#">施政計畫及研究報告</a></li>
+                <li><a href="#">業務統計</a></li>
+                <li><a href="#">預算及決算書</a></li>
+                <li><a href="#">政策及業務宣導之預算執行情形表</a></li>
+                <li><a href="#">稅式支出報告</a></li>
+                <li><a href="#">請願之處理結果及訴願之決定</a></li>
+                <li><a href="#">公共工程及採購契約</a></li>
+                <li><a href="#">個人資料保護專區</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">機關簡介</a>
+              <ul>
+                <li><a href="#">本局沿革</a></li>
+                <li><a href="#">局長介紹</a></li>
+                <li><a href="#">組織編制與職掌</a></li>
+                <li><a href="#">榮譽榜</a></li>
+                <li><a href="#">本局地圖</a></li>
+                <li><a href="#">聯絡通訊</a></li>
+
+              </ul>
+            </li>
+          </ul>
+          <a href="" class="close">關閉</a>
+        </nav>
+        <nav class="menu menu2" role="navigation" aria-label="About page">
+          <ul>
+            <li>
+              <a href="#">各稅資訊</a>
+              <ul>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+                <li><a href="#">第二層選單</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.google.com">線上櫃臺</a></li>
+            <li><a href="http://www.google.com">為民服務</a></li>
+            <li><a href="#">專區服務</a></li>
+            <li><a href="#">會員登入</a></li>
+          </ul>
+        </nav>
+        <!-- Search Start -->
+        <a class="searchSwitch" href="">搜尋</a>
+        <div class="search" role="search">
+          <div class="form_grp">
+            <label for="mustSameAsId">搜尋</label>
+            <input name="username" id="mustSameAsId" type="text" placeholder="請輸入文字" accesskey="S" title="請輸入文字" aria-label="搜尋網站內容" />
+            <button type="button" class="btn btn-search">查詢</button>
+            <button type="button" class="btn">進階搜尋</button>
+          </div>
+          <div class="keywordHot">
+            熱門關鍵字：
+            <ul>
+              <li><a href="#">熱門熱門</a></li>
+              <li><a href="#">查詢</a></li>
+              <li><a href="#">字詞三</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Search End -->
+      </div>
+    </header>
+    <!-- header End -->
+    <div class="inner_img">
+      <img src="images/innerimg.jpeg" alt="" />
+    </div>
+    <!-- main Start -->
+    <div id="center" class="main innerpage">
+      <!-- 內頁新增一個classname-->
+      <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+      <div class="container">
+        <!-- 主要內容區 -->
+        <div class="center_block">
+          <!-- breadcrumb路徑 -->
+          <div class="breadcrumb">
+            <ul>
+              <li><a href="#">首頁</a></li>
+              <li><a href="#">節點</a></li>
+              <li>便利得「免下車」網路預約服務</li>
+            </ul>
+          </div>
+          <!-- h2節點 -->
+          <h2 class="title">便利得「免下車」網路預約服務</h2>
+          <!-- function_panel -->
+          <div class="function_panel">
+            <!-- function功能區塊 -->
+            <div class="function">
+              <ul>
+                <li class="back">
+                  <a href="javascript:history.back()">回上一頁</a>
+                </li>
+                <li class="print"><a href="#">友善列印</a></li>
+                <li class="forward"><a href="#">轉寄友人</a></li>
+              </ul>
+            </div>
+            <!-- 社群分享 -->
+            <div class="share">
+              <ul>
+                <li>
+                  <a href="#"><img src="images/basic/icon_facebook.svg" alt="facebook" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/basic/icon_twitter.svg" alt="twitter" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/basic/icon_line.svg" alt="line" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/basic/icon_youtube.svg" alt="youtube" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/basic/icon_googleplus.svg" alt="google plus" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/basic/icon_instagram.svg" alt="instagram" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/basic/icon_linkedin.svg" alt="LinkedIn" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/basic/icon_rss2.svg" alt="RSS" /></a>
+                </li>
+                <li>
+                  <a href="#"><img src="images/basic/icon_plurk.svg" alt="Plurk" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- SP Start -->
+          <section class="sp">
+            <div class="process">
+              <ul>
+                <li>
+                  <span class="step">1</span>
+                  <span class="text">個資聲明</span>
+                </li>
+                <li class="active">
+                  <span class="step">2</span>
+                  <span class="text">資料填寫</span>
+                </li>
+                <li>
+                  <span class="step">3</span>
+                  <span class="text">預覽確認</span>
+                </li>
+                <li>
+                  <span class="step">4</span>
+                  <span class="text">案件送出成功</span>
+                </li>
+              </ul>
+            </div>
+            <div class="noticeTxt">
+              <h3>注意事項：</h3>
+              <ul>
+                <li>
+                  <strong>網路申請取件：</strong><br />申請人於取件前一日中午12時前(不含例假日、國定假日)上網預約完成，取件時間限於次日下午1時30分後，於預定時間(週一至週五上午9時至下午5時)至本局(安樂路2段162號)門口按壓服務鈴後領取。
+                </li>
+                <li>
+                  <strong>應備證件：</strong>
+                  <ol>
+                    <li>申請人親自領取:申請人身分證、印章。</li>
+                    <li>
+                      委託代領:申請人身分證、印章，代理人身分證印章及委託書。
+                    </li>
+                    <li>
+                      申請項目為全國財產總歸戶清單查調(債權人查調債務人除外)，如申請對象為無行為能力人或限制行為能力人，另檢附法定代理人身分證、印章。
+                    </li>
+                  </ol>
+                </li>
+                <li>
+                  <strong>其他規定：</strong>
+                  <ol>
+                    <li>申請人申請逾7天後仍未領取者，予以註銷</li>
+                    <li>
+                      申請人預約後，1年內超過3次未取件者，取消預約服務資格。
+                    </li>
+                    <li>
+                      請填妥下列申請表單內各欄位之詳實資料，如登入資料有誤，請先行修正或按清除重寫鍵後重新登入正確資料；如確認無誤請按確認後寄出鍵。
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+            <div class="apply">
+              <p>註:<abbr class="necessary" title="“為必填欄位,不能為空白。“">必填</abbr>欄位, 不能為空白。</p>
+              <div class="apply_form">
+                <form action="" class="flex-form form_grid">
+                  <h3>服務項目<abbr class="necessary" title="“為必填欄位,不能為空白。“">必填</abbr></h3>
+                  <div class="shadowOut">
+                    <div class="form_group">
+                      <!-- 意見反應類別 -->
+                      <div class="notice_info">以下服務項目至少勾選一項。</div>
+                      <div class="form_grp">
+                        <div class="form_title">房屋稅</div>
+                        <div class="form_content">
+                          <div class="check_grp">
+                            <label><input name="" type="checkbox" value="">稅籍編號查詢</label>
+                            <label><input name="" type="checkbox" value="">稅籍證明</label>
+                            <label><input name="" type="checkbox" value="">欠稅查詢及補發繳款書，年度：
+                              <select id="" name="">
+                                <option value="">請選擇</option>
+                                <option value="">111</option>
+                                <option value="">110</option>
+                                <option value="">...</option>
+                                <option value="">102</option>
+                              </select>
+                            </label>
+                            <label>
+                              <input name="" type="checkbox" value="">繳納證明，年度：
+                              <select id="" name="">
+                                <option value="">請選擇</option>
+                                <option value="">111</option>
+                                <option value="">110</option>
+                                <option value="">...</option>
+                                <option value="">102</option>
+                              </select>
+                            </label>
+                            <label>
+                              <input name="" type="checkbox" value="">當期繳款書
+                            </label>
+                            <label>
+                              <input name="" type="checkbox" value="">轉帳納稅繳納證明，年度：
+                              <select id="" name="">
+                                <option value="">請選擇</option>
+                                <option value="">111</option>
+                                <option value="">110</option>
+                                <option value="">...</option>
+                                <option value="">102</option>
+                              </select>
+                            </label>
+                            <label>
+                            <input name="" type="checkbox" value="">課稅明細表
+                          </label>
+                          </div>
+                          <div class="form_grp innerform">
+                            <div class="form_content form_inline">
+                              <label><abbr class="necessary" title="“為必填欄位,不能為空白。“">必填</abbr>房屋坐落地址：基隆市</label>
+                              <select id="" name="">
+                                <option value="">中正區</option>
+                                <option value="">七堵區</option>
+                                <option value="">暖暖區</option>
+                                <option value="">仁愛區</option>
+                                <option value="">中山區</option>
+                                <option value="">安樂區</option>
+                                <option value="">信義區</option>
+                              </select>
+                              <input name="username" placeholder="請輸入房屋坐落" type="text">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form_grp">
+                        <div class="form_title">地價稅</div>
+                        <div class="form_content">
+                          <div class="check_grp">
+                            <label>
+                              <input name="" type="checkbox" value="">欠稅查詢及補發繳款書，年度：
+                              <select id="" name="">
+                                <option value="">請選擇</option>
+                                <option value="">111</option>
+                                <option value="">110</option>
+                                <option value="">...</option>
+                                <option value="">102</option>
+                              </select>
+                            </label>
+                            <label>
+                              <input name="" type="checkbox" value="">繳納證明，年度：
+                              <select id="" name="">
+                                <option value="">請選擇</option>
+                                <option value="">111</option>
+                                <option value="">110</option>
+                                <option value="">...</option>
+                                <option value="">102</option>
+                              </select>
+                            </label>
+                            <label>
+                              <input name="" type="checkbox" value="">當期繳款書
+                            </label>
+                            <label>
+                              <input name="" type="checkbox" value="">轉帳納稅繳納證明，年度：
+                              <select id="" name="">
+                                <option value="">請選擇</option>
+                                <option value="">111</option>
+                                <option value="">110</option>
+                                <option value="">...</option>
+                                <option value="">102</option>
+                              </select>
+                            </label>
+                            <label>
+                            <input name="" type="checkbox" value="">課稅明細表</label>
+                          </div>
+                          <div class="form_grp innerform">
+                            <div class="form_content form_inline">
+                              <label><abbr class="necessary" title="“為必填欄位,不能為空白。“">必填</abbr>土地坐落：基隆市</label>
+                              <select id="" name="">
+                                <option value="">中正區</option>
+                                <option value="">七堵區</option>
+                                <option value="">暖暖區</option>
+                                <option value="">仁愛區</option>
+                                <option value="">中山區</option>
+                                <option value="">安樂區</option>
+                                <option value="">信義區</option>
+                              </select>
+                              <input name="username" placeholder="請輸入土地坐落" type="text" class="address">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form_grp">
+                        <div class="form_title">
+                          使用牌照稅</div>
+                        <div class="form_content">
+                          <div class="check_grp">
+                            <label>
+                              <input name="" type="checkbox" value="">欠稅查詢及補發繳款書，年度：
+                              <select id="" name="">
+                                <option value="">請選擇</option>
+                                <option value="">111</option>
+                                <option value="">110</option>
+                                <option value="">...</option>
+                                <option value="">102</option>
+                              </select>
+                            </label>
+                            <label>
+                              <input name="" type="checkbox" value="">繳納證明，年度：
+                              <select id="" name="">
+                                <option value="">請選擇</option>
+                                <option value="">111</option>
+                                <option value="">110</option>
+                                <option value="">...</option>
+                                <option value="">102</option>
+                              </select>
+                            </label>
+                            <label>
+                              <input name="" type="checkbox" value="">當期繳款書
+                            </label>
+                            <label>
+                              <input name="" type="checkbox" value="">轉帳納稅繳納證明，年度：
+                              <select id="" name="">
+                                <option value="">請選擇</option>
+                                <option value="">111</option>
+                                <option value="">110</option>
+                                <option value="">...</option>
+                                <option value="">102</option>
+                              </select>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form_grp">
+                        <div class="form_title">
+                          土地增值稅</div>
+                        <div class="form_content">
+                          <div class="check_grp">
+                            <label>
+                            <input name="" type="checkbox" value="">曾否享用自用住宅優惠稅率</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form_grp">
+                        <div class="form_title">
+                          娛樂稅</div>
+                        <div class="form_content">
+                          <div class="check_grp">
+                            <label>
+                              <input name="" type="checkbox" value="">補發繳款書，年度：
+                              <select id="" name="">
+                                <option value="">請選擇</option>
+                                <option value="">111</option>
+                                <option value="">110</option>
+                                <option value="">...</option>
+                                <option value="">102</option>
+                              </select>
+                            </label>
+                            <label>
+                            <input name="" type="checkbox" value="">繳納證明</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form_grp">
+                        <div class="form_title">
+                          財產所得查調</div>
+                        <div class="form_content">
+                          <div class="check_grp">
+                            <label>
+                            <input name="" type="checkbox" value="">全國財產總歸戶清單查調(債權人查調債務人除外)
+                          </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form_grp">
+                        <div class="form_title">
+                          其他</div>
+                        <div class="form_content">
+                          <div class="check_grp">
+                            <label><input name="" type="checkbox" value="">各項申請書表與宣導資料</label>
+                            <label><input name="" type="checkbox" value="">轉帳納稅查詢</label>
+                            <label><input name="" type="checkbox" value="">轉帳納稅申請</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3>申請（納稅義務）人基本資料</h3>
+                  <div class="shadowOut">
+                    <div class="form_group">
+                      <!-- 姓名 -->
+                      <div class="form_grp">
+                        <label class="form_title" for=""><abbr class="necessary" title="“為必填欄位,不能為空白。“">必填</abbr>姓名</label>
+                        <div class="form_content">
+                          <input id="" name="" placeholder="請輸入姓名" type="text">
+                        </div>
+                      </div>
+                      <div class="form_grp">
+                        <label class="form_title" for=""><abbr class="necessary" title="“為必填欄位,不能為空白。“">必填</abbr>身分證統一編號</label>
+                        <div class="form_content">
+                          <input id="" name="" placeholder="請輸入身分證統一編號" type="text">
+                        </div>
+                      </div>
+                      <!-- 聯絡電話 -->
+                      <div class="form_grp">
+                        <label class="form_title" for=""><abbr class="necessary" title="“為必填欄位,不能為空白。“">必填</abbr>聯絡電話</label>
+                        <div class="form_content">
+                          <input id="htx_phone" maxlength="20" name="phone" placeholder="請輸入聯絡電話" type="text" value="">
+                        </div>
+                      </div>
+                      <!-- E-mail電子信箱 -->
+                      <div class="form_grp">
+                        <label class="form_title" for="">E-mail電子信箱</label>
+                        <div class="form_content">
+                          <input id="" name="" placeholder="請輸入E-mail電子信箱" type="text">
+                        </div>
+                      </div>
+                      <!-- 通訊地址 -->
+                      <div class="form_grp">
+                        <label class="form_title" for="htx_address">
+                        地址</label>
+                        <div class="form_content">
+                          <input id="htx_address" maxlength="250" name="address" placeholder="請輸入地址" type="text" value="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h3>驗證碼</h3>
+                  <div class="shadowOut">
+                    <div class="form_group">
+                      <!-- 驗證碼 -->
+                      <div class="form_grp">
+                        <label class="form_title">
+                        <abbr class="necessary" title="“為必填欄位,不能為空白。“">
+                        必填</abbr>驗證碼</label>
+                        <div class="form_content">
+                          <img alt="" class="captcha" src="images/basic/captcha.gif">
+                          <input id="" type="text" value=""><a class="refresh" href="">更換驗證碼</a><a class="play" href="">語音播放</a>
+                          <div class="notice_info">
+                            如果無法使用語音，請下載<a alt="語音檔案" href="/wSite/audioCaptcha.mp3" title="語音檔案">語音檔案</a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn_grp">
+                    <button class="btn btn-reset">清除重填</button>
+                    <button class="btn btn-submit">下一步</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+          <!-- sP End -->
+        </div>
+      </div>
+    </div>
+    <!-- fatfooter Start -->
+    <section class="fatfooter">
+      <div class="container">
+        <button type="button" name="展開選單/OPEN" aria-label="導覽選單展開/收合" class="btn btn-fatfooter">收合</button>
+        <nav>
+          <ul>
+            <li><a href="#">各稅資訊</a>
+              <ul>
+                <li><a href="#">使用牌照稅</a></li>
+                <li><a href="#">房屋稅</a></li>
+                <li><a href="#">地價稅</a></li>
+                <li><a href="#">土地增值稅</a></li>
+                <li><a href="#">契稅</a></li>
+                <li><a href="#">印花稅</a></li>
+                <li><a href="#">娛樂稅</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.google.com">線上櫃臺</a>
+              <ul>
+                <li><a href="http://www.google.com">線上申辦及表單下載</a></li>
+                <li><a href="#">即時查詢</a></li>
+                <li><a href="#">各類試算</a></li>
+                <li><a href="#">線上查繳稅</a></li>
+                <li><a href="#">網路繳稅</a></li>
+                <li><a href="#">電子稅務入口網</a></li>
+                <li><a href="#">不動產移轉網路申報</a></li>
+                <li><a href="#">預約服務</a></li>
+              </ul>
+            </li>
+            <li><a href="http://www.google.com">為民服務</a>
+              <ul>
+                <li><a href="http://www.google.com">全功能服務櫃臺作業項目及應備證件</a></li>
+                <li><a href="#">創新服務措施</a></li>
+                <li><a href="#">便民服務措施</a></li>
+                <li><a href="#">節稅健檢</a></li>
+                <li><a href="#">多元繳稅說明專區</a></li>
+                <li><a href="#">意見交流</a></li>
+                <li><a href="#">問卷調查</a></li>
+                <li><a href="#">稅款逾期加徵滯納金計算表</a></li>
+                <li><a href="#">稅務行事曆</a></li>
+                <li><a href="#">常見問答</a></li>
+              </ul>
+            </li>
+            <li><a href="#">專區服務</a>
+              <ul>
+                <li><a href="#">新冠肺炎專區</a></li>
+                <li><a href="#">多元繳稅說明專區</a></li>
+                <li><a href="http://www.google.com">身心障礙服務專區</a></li>
+                <li><a href="#">災害減免專區</a></li>
+                <li><a href="#">銀髮族專區</a></li>
+                <li><a href="#">財產過戶專區</a></li>
+                <li><a href="#">節稅專區</a></li>
+                <li><a href="#">新住民稅務專區</a></li>
+                <li><a href="#">納稅者權利保護專區</a></li>
+                <li><a href="#">修法專區</a></li>
+                <li><a href="#">金融機構經收稅款專區</a></li>
+                <li><a href="#">志工專區</a></li>
+                <li><a href="#">政風園地</a></li>
+              </ul>
+            </li>
+            <li><a href="#">宣導園地</a>
+              <ul>
+                <li><a href="#">活動訊息</a></li>
+                <li><a href="#">有獎徵答活動</a></li>
+                <li><a href="#">雲端發票e起來</a></li>
+                <li><a href="#">統一發票開獎</a></li>
+                <li><a href="#">電子書</a></li>
+                <li><a href="#">宣導文宣</a></li>
+                <li><a href="#">數位影音</a></li>
+                <li><a href="#">節稅懶人包</a></li>
+                <li><a href="#">教材下載</a></li>
+              </ul>
+            </li>
+            <li><a href="#">公布欄</a>
+              <ul>
+                <li><a href="#">稅務新聞</a></li>
+                <li><a href="#">活動訊息</a></li>
+                <li><a href="#">稅務公告</a></li>
+                <li><a href="#">徵才公告</a></li>
+                <li><a href="#">招標公告</a></li>
+              </ul>
+            </li>
+            <li><a href="#">資訊公開</a>
+              <ul>
+                <li><a href="#">法規命令</a></li>
+                <li><a href="#">政府資料開放</a></li>
+                <li><a href="#">施政計畫及研究報告</a></li>
+                <li><a href="#">業務統計</a></li>
+                <li><a href="#">預算及決算書</a></li>
+                <li><a href="#">政策及業務宣導之預算執行情形表</a></li>
+                <li><a href="#">稅式支出報告</a></li>
+                <li><a href="#">請願之處理結果及訴願之決定</a></li>
+                <li><a href="#">公共工程及採購契約</a></li>
+                <li><a href="#">個人資料保護專區</a></li>
+              </ul>
+            </li>
+            <li><a href="#">機關簡介</a>
+              <ul>
+                <li><a href="#">本局沿革</a></li>
+                <li><a href="#">局長介紹</a></li>
+                <li><a href="#">組織編制與職掌</a></li>
+                <li><a href="#">榮譽榜</a></li>
+                <li><a href="#">本局地圖</a></li>
+                <li><a href="#">聯絡通訊</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <!-- fatfooter End -->
+    <!-- footer Start-->
+    <footer>
+      <div class="container">
+        <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="頁尾區">:::</a>
+        <div class="footer_info">
+          <ul class="footer_link">
+            <li><a href="javascript:;">隱私權政策</a></li>
+            <li><a href="javascript:;">網站安全政策</a></li>
+            <li><a href="javascript:;">政府網站資料開放宣告</a></li>
+          </ul>
+          <p>
+            免付費電話：0800-306969 <br>本局電話：02-24331888 <br>地址：20402基隆市安樂路二段162號 <a href="">【地圖】</a><br> 服務時間：星期一至星期五8:00~12:00｜下午1:30~5:30 (總局服務中心中午不休息,下午延時服務至6:00)
+          </p>
+          <p class="Copyright">版權所有 ©Copyright 基隆市稅務局</p>
+          <span class="update">更新日期：<em>2018/01/01</em></span>
+          <span class="counter">總瀏覽人次：<em>46476653</em></span>
+        </div>
+        <div class="footer_icon">
+          <a target="_blank" href="javascript:;" title="另開視窗">
+            <img src="images/basic/egov.png" alt="">
+          </a>
+          <a target="_blank" href="javascript:;" title="另開視窗">
+            <img src="images/basic/accessibility.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- footer End -->
+  </div>
+  <a href=" javascript:; " class=" scrollToTop ">回頁首</a>
+  <!-- JQ -->
+  <script src=" js/jquery-3.6.0.min.js "></script>
+  <!-- 外掛 plugin js -->
+  <script src=" vendor/jquery.easing.min.js "></script>
+  <!-- ease -->
+  <script src=" vendor/slick/slick.min.js "></script>
+  <!-- slick -->
+  <script src=" vendor/slick/slick-lightbox.js "></script>
+  <!-- slick lightbox -->
+  <script src=" vendor/lazyload/lazyload.js "></script>
+  <!-- lazyload -->
+  <script src=" vendor/picturefill/picturefill.min.js " async></script>
+  <!-- picturefill -->
+  <script src=" vendor/scrolltable/jquery.scroltable.min.js "></script>
+  <!-- scrolltable -->
+  <!-- sticky-sidebar -->
+  <script src=" vendor/sticky-sidebar/sticky-sidebar.js "></script>
+  <script src=" vendor/sticky-sidebar/ResizeSensor.js "></script>
+  <!-- fancy -->
+  <script src=" vendor/fancybox/jquery.fancybox.min.js "></script>
+  <!-- hyUI -->
+  <script src=" js/hyui.js "></script>
+  <!-- 客製js -->
+  <script src=" js/customize.js "></script>
+</body>
+
+</html>

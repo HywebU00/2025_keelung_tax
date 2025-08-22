@@ -1,0 +1,122 @@
+@mixin fontSetting($FONT-SIZE: $font-size, $WEIGHT: normal) {
+  font-size: $FONT-SIZE;
+  font-weight: $WEIGHT;
+  color: $color-word;
+}
+
+@mixin aSetting($COLOR: $aColor, $NOLINE: none) {
+  color: $COLOR;
+  text-decoration: $NOLINE;
+  &:hover,
+  &:focus {
+    color: $aHover;
+    cursor: pointer;
+  }
+}
+
+@mixin aSetting_nocolor($COLOR: $color-word, $NOLINE: none) {
+  color: $COLOR;
+  text-decoration: $NOLINE;
+  &:hover,
+  &:focus {
+    color: $aHover;
+    cursor: pointer;
+  }
+}
+
+body {
+  @include fontSetting(1em);
+  line-height: 1.45em;
+  font-family: $font-family;
+  -webkit-text-size-adjust: none;
+}
+
+a {
+  @include aSetting();
+}
+
+// kbd
+kbd {
+  background: #fff;
+  border-radius: 0.2em;
+  color: #555;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0.1em 0.6em;
+  font-size: 0.938em;
+  font-family: sans-serif;
+  margin-right: 0.4em;
+  margin-bottom: 0.1em;
+  vertical-align: middle;
+  border-top: 1px solid #bbb;
+  border-bottom: 3px solid #bbb;
+  border-left: 2px solid #bbb;
+  border-right: 2px solid #bbb;
+  ~kbd {
+    margin-left: 0.4em;
+  }
+  kbd {
+    border: none;
+  }
+}
+
+.font_size {
+  display: flex;
+  align-items: center;
+  // flex: 0 1 12.5em;
+  flex: 0 1 auto;
+  margin-right: 0.5em;
+  span {
+    font-size: 0;
+    color: #767676;
+    padding-top: 0.3em;
+    margin-right: .5rem;
+    // @media screen and (max-width: 1044px) {
+    //   display: none;
+    // }
+  }
+  ul {
+    @include li-reset;
+    display: flex;
+    flex: 0 0 6em;
+    font-size: 0.875em;
+    li {
+      //   font-size: 1em;
+      flex: 0 0 auto;
+      margin: 2px;
+      align-items: center;
+      a {
+        display: block;
+        text-align: center;
+        line-height: 24px;
+        border-radius: 50%;
+        background: #f1f1f1;
+        width: 24px;
+        height: 24px;
+        color: #767676;
+        &:hover,
+        &:focus,
+        &.active {
+          background: $primaryColor;
+          color: #fff;
+          box-shadow: none;
+        }
+        &.active {
+          &:hover,
+          &:focus {
+            background: $secondaryColor;
+          }
+        }
+        // &.small {
+        //   font-size: 0.938em;
+        // }
+        // &.large {
+        //   font-size: 1.125em;
+        // }
+      }
+    }
+  }
+  @include screen('mobile') {
+    display: none;
+  }
+}

@@ -1,0 +1,360 @@
+// function_panel setting   ------------------------
+.function_panel {
+  margin-bottom: 1rem;
+  padding: 0;
+  min-height: 35px;
+  width: 100%;
+  // text-align: right;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  @include screen("mobile") {
+  }
+  .adSearch {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    min-width: 100px;
+    display: block;
+    color: #555;
+    @include screen("mobile") {
+      // float: none;
+      // margin-bottom: 1rem;
+    }
+    .adSearch_btn {
+      display: inline-block;
+      a {
+        line-height: 40px;
+        padding: 0 1em 0 2.5em;
+        background: $primaryColor url(../images/mp/icon_search_.svg) no-repeat
+          16px center;
+        background-size: 16px;
+        color: #fff;
+        display: block;
+        border-radius: 6px;
+        transition: all 0.5s;
+        font-weight: 500;
+        &:hover,
+        &:focus {
+          background: $secondaryColor url(../images/mp/icon_search_.svg)
+            no-repeat 16px center;
+          background-size: 16px;
+          box-shadow: none;
+          color: #fff;
+        }
+      }
+    }
+    .adSearch_form {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 56px;
+      padding: 1rem 1.5rem;
+      background: #e6e6e6;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+      border-top: 4px solid $primaryColor;
+      display: none;
+      z-index: 999;
+      .form_grid {
+        border-top: 0;
+        margin: 0;
+        font-size: 1em;
+        .form_grp {
+          border-bottom: 1px solid #ccc;
+        }
+        .form_title {
+          padding-top: 10px;
+          @include screen("mobile") {
+            text-align: left;
+          }
+        }
+        .form_content {
+          text-align: left;
+        }
+        .btn_grp {
+          padding-bottom: 0.5rem;
+          button {
+            margin: 0 4px;
+          }
+        }
+        .btn-reset {
+          background: #666;
+          color: #fff;
+          border: 1px solid #666;
+          &:focus,
+          &:hover {
+            background: #444;
+            border: 1px solid #444;
+          }
+        }
+        .btn-submit {
+        }
+      }
+    }
+  }
+  .publish_time {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    min-width: 100px;
+    display: block;
+    color: #555;
+    span {
+      font-size: 0.938em;
+      @include screen("mobile") {
+        display: none;
+      }
+    }
+    time {
+      font-family: georgia;
+      font-size: 1.125em;
+      @include screen("mobile") {
+        font-size: 0.938em;
+      }
+    }
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      top: 0.3em;
+      background: url(../images/basic/icon_time.png) no-repeat center center;
+      background-size: 12px;
+    }
+  }
+  .function {
+    display: inline-block;
+    vertical-align: top;
+    height: 40px;
+    margin: 0;
+    ul {
+      li {
+        width: 40px;
+        height: 40px;
+        font-size: 1em;
+        float: left;
+        display: block;
+        margin: 0 0.2em;
+        a {
+          display: block;
+          box-sizing: border-box;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          background: #555;
+          font-size: 0;
+          line-height: 40px;
+          position: relative;
+          &:hover,
+          &:focus {
+            background: $primaryColor;
+            color: #fff;
+            box-shadow: none;
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            width: 60%;
+            height: 60%;
+            top: 20%;
+            left: 20%;
+          }
+        }
+        &.back {
+          a:before {
+            background: url(../images/basic/icon_back.svg) no-repeat center
+              center;
+            background-size: 16px;
+          }
+        }
+        &.print {
+          a:before {
+            background: url(../images/basic/icon_printer.png) no-repeat center
+              center;
+            background-size: 16px;
+          }
+          @include screen("mobile") {
+            display: none;
+          }
+        }
+        &.rss {
+          a:before {
+            background: url(../images/basic/icon_rss.svg) no-repeat center
+              center;
+            background-size: 16px;
+          }
+        }
+        &.forward {
+          a:before {
+            background: url(../images/basic/icon_forward.svg) no-repeat center
+              center;
+            background-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.share {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 0 4px;
+  position: relative;
+  .shareButton {
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    background: $secondaryColor;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 60%;
+      height: 60%;
+      top: 20%;
+      left: 20%;
+      background: url(../images/basic/icon_share_.svg) no-repeat center center;
+      background-size: 16px;
+    }
+    &:hover,
+    &:focus {
+      background: $primaryColor;
+    }
+  }
+  ul {
+    display: none;
+    position: absolute;
+    top: 1.8em;
+    left: -2px;
+    padding: 8px 6px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 2px 5px RGBA(0, 0, 0, 0.2);
+    border-radius: 6px;
+    z-index: 999;
+    height: auto;
+    li {
+      display: block;
+      margin: 0 auto 0.5em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      a {
+        background: transparent;
+        display: block;
+        padding: 0;
+        width: 32px;
+        height: 32px;
+        position: relative;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 30px;
+          height: 30px;
+          display: block;
+          border-radius: 50%;
+          background: #fff;
+          z-index: 8;
+          left: 1px;
+          top: 1px;
+        }
+        img {
+          width: 32px;
+          height: 32px;
+          margin: 0 auto;
+          transition: all 0.2s;
+          position: relative;
+          z-index: 9;
+        }
+        &:hover,
+        &:focus {
+          background: transparent;
+          img {
+            transform: scale(1.15);
+          }
+        }
+        &:focus {
+          img {
+            filter: grayscale(1);
+          }
+        }
+      }
+    }
+  }
+}
+
+// function   ------------------------
+$function_color: #666;
+//可自訂顏色，或是自帶既有變數，但請注意背景色與字的對比度
+//icon基本設定
+%function_before {
+  vertical-align: middle;
+  content: "";
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+div.function {
+  box-sizing: border-box;
+  @extend %clearfix;
+  margin: 0.5em 0;
+  ul {
+    @include li-reset;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    li {
+      margin: 0 0px 0px 3px;
+      flex: 0 0 auto;
+      button,
+      a {
+        font-size: 0.813em;
+        display: block;
+        padding: 0.2em 1em;
+        background: $function_color;
+        border-color: $function_color;
+        color: #fff;
+        border-radius: 4px;
+        &:hover,
+        &:focus {
+          background: darken($aHover, 0);
+          border-color: darken($aHover, 0);
+        }
+      }
+      // 回上一頁
+      &.icon_back {
+        a:before {
+          @extend %function_before;
+          background: url(../images/basic/icon_back.svg) no-repeat center center;
+          background-size: 16px;
+        }
+      }
+      // 友善列印
+      &.icon_print {
+        a:before {
+          @extend %function_before;
+          background: url(../images/basic/icon_print.svg) no-repeat center
+            center;
+          background-size: 20px;
+        }
+      }
+      // 轉寄友人
+      &.icon_forward {
+        a:before {
+          @extend %function_before;
+          background: url(../images/basic/icon_forward.svg) no-repeat center
+            bottom;
+          background-size: 20px;
+        }
+      }
+    }
+  }
+}

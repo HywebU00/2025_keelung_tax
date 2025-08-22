@@ -1,0 +1,33 @@
+// 文章標籤
+div.tag {
+  @extend %clearfix;
+  margin-bottom: .5em;
+  position: relative;
+  &:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    background: url(../images/basic/icon_tag.png) no-repeat center center;
+    background-size: 16px;
+  }
+  ul {
+    @include li-reset;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1.5em;
+    li {
+      margin: 0 0.5em 0.5em 0;
+      flex: 0 0 auto;
+      a {
+        display: block;
+        font-size: 0.938em;
+        @include aSetting_nocolor;
+        border: 1px solid #ddd;
+        padding: 0.2em 0.75em;
+      }
+    }
+  }
+}
